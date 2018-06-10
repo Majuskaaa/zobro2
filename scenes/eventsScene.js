@@ -10,8 +10,10 @@ import {
   Image,
   TouchableHighlight,
   ImageBackground,
-  Alert
+  Alert,
+  Linking
 } from 'react-native';
+import Hyperlink from 'react-native-hyperlink';
 import Text from '../components/animalText';
 
 import events from '../events.js';
@@ -33,6 +35,10 @@ export default class EventScene extends React.Component {
             sound: true
         },
     });
+  }
+
+  _openURL(url) {
+    Linking.openURL(url);
   }
 
   isTimeSelected(time) {
@@ -88,7 +94,7 @@ export default class EventScene extends React.Component {
           Chcete být upozorněni na začátek krmení?
         </Text>
         <View style={{height: 62, flexDirection: 'row'}}>
-          <TouchableHighlight underlayColor="#aaaaaa" style={[styles.eventButton, _this.styleEvent(event, 5)]} 
+          <TouchableHighlight underlayColor="#aaaaaa" style={[styles.eventButton, _this.styleEvent(event, 5)]}
             onPress={() => _this.toggleEvent(event, 5)}>
             <Text style={styles.eventButtonText}> 5 minut </Text>
           </TouchableHighlight>
@@ -202,6 +208,11 @@ export default class EventScene extends React.Component {
       return result;
     });
 
+    const eventInFuture = events.some((event) => {
+      const endDate = new Date(event.endDate);
+      return (+endDate > +currentDate);
+    });
+
     filteredEvents.sort((a,b) => {
       if (a.time < b.time) {
         return -1;
@@ -217,26 +228,42 @@ export default class EventScene extends React.Component {
         source={require('../images/background/about.png')}
         style={{flex: 1, width: WIDTH}}
       >
-        {
-          filteredEvents.length === 0
+      {
+          eventInFuture
           ? (
+              filteredEvents.length === 0
+              ? (
+                <View style={[styles.eventItem, {flex:1, flexDirection: 'row', backgroundColor: 'rgba(0,0,0,0)'}]}>
+                  <View style={{flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                    <Text style={styles.eventItemText}>Je nám líto,</Text>
+                    <Text style={styles.eventItemTextTime}>dnes už jsme nakrmení.</Text>
+                  </View>
+                </View>
+              ) : (
+                <ScrollView ref="list">
+                  <Accordion
+                    sections={filteredEvents}
+                    renderHeader={this._renderHeader}
+                    renderContent={this._renderContent}
+                    onChange={this._onEventChange}
+                  />
+                </ScrollView>
+              )
+          ) : (
             <View style={[styles.eventItem, {flex:1, flexDirection: 'row', backgroundColor: 'rgba(0,0,0,0)'}]}>
               <View style={{flex: 1, flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-                <Text style={styles.eventItemText}>Je nám líto,</Text>
-                <Text style={styles.eventItemTextTime}>dnes už jsme nakrmení.</Text>
+                <Text style={styles.eventItemText}>Rozpis krmení již není aktuální,</Text>
+                <Text style={styles.eventItemTextTime}>pro více informací navštivte stránky</Text>
+                <Hyperlink onPress={() => {this._openURL('http://www.zoobrno.cz')}}>
+                  <Text style={[styles.eventItemText, {color: 'white', fontWeight: '700',
+                    textAlign: 'center', backgroundColor: 'rgba(0,0,0,0)'}]}>
+                    www.zoobrno.cz
+                  </Text>
+                </Hyperlink>
               </View>
             </View>
-          ) : (
-            <ScrollView ref="list">
-              <Accordion
-                sections={filteredEvents}
-                renderHeader={this._renderHeader}
-                renderContent={this._renderContent}
-                onChange={this._onEventChange}
-              />
-            </ScrollView>
           )
-        }
+      }
       </ImageBackground>
     );
   }
