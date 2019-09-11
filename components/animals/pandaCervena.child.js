@@ -39,9 +39,6 @@ var AnimalDetail = React.createClass({
         <AnimalText>
           <Text style={styles.italic}>A proč se naše pandy nechávají krmit z&nbsp;ruky?</Text>
         </AnimalText>
-        <AnimalText>
-          I&nbsp;naše dvě pandy, Pandoru a Huana, potkal podobný příběh. Když při jedné z&nbsp;her Pandora spadla na čumáček a uraženě vylezla na vysoký strom, Huan si ji chtěl jít udobřit. Jenže ona ho stále vyháněla a jeho snahy odmítala, dokonce mu zakazovala chodit ke společnému krmítku, které si teď přivlastnila. Chudák Huan z&nbsp;toho byl nešťastný a začal hubnout. Proto ho chovatelé raději přesunuli do vlastního výběhu, kde už je spokojený a o&nbsp;jídlo se dělit nemusí. Dokonce se od nich nechává krmit z&nbsp;ruky, aby Pandoře ukázal, že si umí najít i&nbsp;jiné přátele. A stejně tak Pandora, stále ještě uražená, svačí z&nbsp;rukou chovatelů proto, aby Huanovi připomněla, že to tenkrát nebyli oni, kvůli komu si narazila čumáček.
-        </AnimalText>
       </AnimalTemplate>
     );
   }
