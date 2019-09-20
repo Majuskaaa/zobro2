@@ -36,9 +36,6 @@ var AnimalDetail = React.createClass({
           Ostatní pandy si toho však nevšímaly, mohly si přece hrát s&nbsp;někým jiným. Jenže scénář se často opakoval, a když spadla i&nbsp;poslední panda a uraženě vylezla na svůj strom, zavládl v&nbsp;himálajských lesích klid. A od té doby jsou pandy samotáři, dlouhé časy proleží na stromech a dolů se – tentokrát už opatrně, i&nbsp;když stále po čumáčku, – vypraví jen pro jídlo.
         </AnimalText>
       <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />        
-        <AnimalText>
-          <Text style={styles.italic}>A proč se naše pandy nechávají krmit z&nbsp;ruky?</Text>
-        </AnimalText>
       </AnimalTemplate>
     );
   }
