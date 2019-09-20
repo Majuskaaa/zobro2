@@ -29,7 +29,7 @@ var AnimalDetail = React.createClass({
           Takhle my se obvykle zdravíme, víte? Stejně jako normální koně, které jistě znáte. Ačkoliv my nejsme jen tak ledajací. My jsme koně Převalského, jediní opravdoví divocí koně.
         </AnimalText>
         <AnimalText>
-          Tady v&nbsp;brněnské zoo jsme dvě holky, Petra a Rea. Označení „holky“ je však nadnesené, už zdaleka nejsme nejmladší. Obě pocházíme z&nbsp;pražské zoo a do Brna jsme přijely společně v&nbsp;roce 2005.
+          Tady v&nbsp;brněnské zoo jsme dvě holky, Khangai a Dzungari. Obě jsme se narodily v&nbsp;roce 2011, pocházíme z&nbsp;Nizozemska a společně jsme sem dorazily v&nbsp;září 2019 ze Zoo Praha.
         </AnimalText>
         <InPageImage indexes={[2]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
         <AnimalText>
