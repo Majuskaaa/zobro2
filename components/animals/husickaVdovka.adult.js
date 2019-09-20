@@ -23,9 +23,6 @@ var AnimalDetail = React.createClass({
     return (
       <AnimalTemplate firstIndex={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
         <AnimalText>
-          Dva samečci a jedna samička husičky vdovky se vylíhli v&nbsp;roce 2014 v&nbsp;zoo v&nbsp;Berlíně. V&nbsp;tom samém roce dorazili k&nbsp;nám.
-        </AnimalText>
-        <AnimalText>
           Husička vdovka (lat. <Text style={styles.italic}>Dendrocygna viduata</Text>) se vyskytuje v tropických oblastech Afriky a Jižní Ameriky. Jak můžete vidět, i&nbsp;tady v&nbsp;zoo je umístěná v&nbsp;Africké vesnici společně s&nbsp;plameňáky.
         </AnimalText>
         <AnimalText>
