@@ -23,26 +23,36 @@ const THUMBNAILS = [
 var AnimalDetail = React.createClass({
   render() {
     return (
-      <AnimalTemplate firstIndex={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
+      <AnimalTemplate firstIndex={[2]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
         <AnimalText>
-        <Text style={styles.italic}>blabla</Text> &nbsp;
+          Pod latinským názvem <Text style={styles.italic}>Stigmochelys pardalis</Text> se ukrývá druhá největší suchozemská želva Afriky, u&nbsp;nás známá jako želva pardálí. V&nbsp;brněnské zoo je chováme od roku&nbsp;1998, kdy  jsme získali chovný pár ze Zambie.
         </AnimalText>
         <AnimalText>
-        
+          Mimo zoologické zahrady se vyskytují v&nbsp;suchých oblastech střední, východní a jižní Afriky, a to především na křovinatých okrajích stepí a savan. Můžeme je potkat až do výšek kolem 3000&nbsp;m&nbsp;n.&nbsp;m. Takové biotopy se vyznačují výrazným kolísáním teplot během dne. Nepříznivé podmínky želvy přečkávají zahrabané v&nbsp;dírách, škvírách skal, březích vyschlých řek, a někdy dokonce i&nbsp;v&nbsp;termitištích.
         </AnimalText>
         <AnimalText>
-        
+          Dospělé želvy mají jen málo přirozených nepřátel. Mohou je ulovit např. lvi a hyeny. Uhodli byste však, které zvíře jim opravdu škodí? Málokdo by asi čekal, že to budou stáda koz a ovcí. Je to proto, že jim spásají trávu. Nejsmutnější je, že mnoho želv skončí svůj život pod koly aut. Hynou ale i&nbsp;kvůli požárům a elektrickým ohradníkům. Mláďata jsou na tom o&nbsp;něco hůř, napadají je totiž opice, čápi (např. marabu), vrány a draví ptáci. Bezbranná vejce vyhrabávají varani, šakalové a snůšku mohou zničit třeba i&nbsp;mravenci.
+        </AnimalText>
+        <AnimalText>
+          Želvy migrují pouze výjimečně. Nejedná se navíc o&nbsp;nějaké dalekosáhlé mnohadenní pochody jedním směrem, pohybují se vždy v&nbsp;rámci svého domovského okrsku. Denně jsou schopny urazit maximálně 8&nbsp;km, většinou spíš méně.  Údajně však, když jsou člověkem přemístěny, se zvládnou vrátit na původní místo ze vzdálenosti až 50&nbsp;km. 
         </AnimalText>
         <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
         <AnimalText>
-        
+          Živí se různými rostlinami, a to především trávami a sukulenty, které jim jsou znamenitým zdrojem vody. Pokud náhodou naleznou nějaký plod, slupnou i&nbsp;ten. Příležitostně si také pochutnají na živočišných zbytcích, kostech, suchých výkalech a vývržcích. V&nbsp;období sucha přestávají přijímat potravu a upadají do letního spánku.
+        </AnimalText>
+        <InPageImage indexes={[3]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Želvy pardálí nežijí v&nbsp;partnerských svazcích, dalo by se říct, že se páří víceméně nahodile. Když během jara samec zachytí pach jakékoli kolemjdoucí samičky, probudí se v&nbsp;něm milovník a pronásleduje ji. Je schopen vyvinout až neuvěřitelnou rychlost a poměrně akční pohyb. Pokud i&nbsp;přes veškeré jeho pokusy jde samička tvrdohlavě dál, snaží se ji zastavit naběhnutím, strkáním, případně i kousáním do končetin.
         </AnimalText>
         <AnimalText>
-        
+          Před kladením vajec bývá samice neklidná a během chvilky dokáže vypít až půl litru vody. Proč? Při kladení totiž vypouští moč, a zavlažuje tak jámu, kterou předtím vyhrabala na vhodném místě. Jáma může být až 25&nbsp;centimetrů hluboká a má zvláštní tvar – dole je totiž širší než nahoře. Do ní pak samička naklade až 30&nbsp;vajíček a jámu zahrabe. Za 8–18&nbsp;měsíců se líhnou mláďata, která nejsou větší než 5&nbsp;centimetrů.
         </AnimalText>
-        <InPageImage indexes={[2]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <InPageImage indexes={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
         <AnimalText>
-        
+          Po narození mají mláďata na čenichu tvrdý rohovinový výrůstek. Ten malým želvičkám pomáhá prorazit skořápku. Líhnutí neprobíhá u&nbsp;všech želviček stejně, a tak se protáhne i&nbsp;na několik dní. Po rozbití skořápky želvičky zpočátku odpočívají v&nbsp;částečně otevřeném vejci a sem tam vystrkují jen hlavu nebo nohu. Nakonec ale ze skořápky stejně vylezou. Zpočátku jsou lehce pokřivené, postupně se však jejich měkký krunýř roztáhne do obvyklého tvaru.
+        </AnimalText>
+        <AnimalText>
+          Mladé želvy bývají světlejší a mají zřetelnější kresbu. Pohlaví lze rozeznat až od pěti let, to dosahují délky přibližně 20&nbsp;centimetrů. Samci bývají užší a protáhlejší, samičky naopak kratší a širší, v&nbsp;dospělosti jsou rozdíly mezi jednotlivými pohlavími celkem markantní, a tak není možné si je splést. Dospělí jedinci mohou dosáhnout délky až 50&nbsp;centimetrů a váží až 25&nbsp;kilogramů. Dožívají se požehnaného věku, a sice až 100&nbsp;let.
         </AnimalText>
       </AnimalTemplate>
     );
