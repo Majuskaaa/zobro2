@@ -25,7 +25,7 @@ var AnimalDetail = React.createClass({
     return (
       <AnimalTemplate firstIndex={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
         <AnimalText>
-        <Text style={styles.italic}>blabla</Text> &nbsp;
+          
         </AnimalText>
         <AnimalText>
         
