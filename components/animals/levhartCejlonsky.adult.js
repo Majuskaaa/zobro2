@@ -31,7 +31,7 @@ var AnimalDetail = React.createClass({
         </AnimalText>
       <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />        
         <AnimalText>
-          Levhart má vynikající čich, zrak a sluch. Je to ohrožený druh, dožívá se 10&nbsp;let, v&nbsp;lidské péči až 23&nbsp;let. V&nbsp;zoologických zahradách po celém světě je asi jen 60&nbsp;jedinců. Naše zoologická zahrada se může pochlubit samcem Daanem, který se narodil 19.&nbsp;9. 2011 v&nbsp;Nizozemsku a k&nbsp;nám dorazil 25.&nbsp;2. 2013 z&nbsp;Arnhemu. Samice Nayana se narodila 24.&nbsp;6. 2011 v&nbsp;Bratislavě, odkud do naší zoo dorazila 20.&nbsp;2. 2013.
+          Levhart má vynikající čich, zrak a sluch. Je to ohrožený druh, dožívá se 10&nbsp;let, v&nbsp;lidské péči až 23&nbsp;let. V&nbsp;zoologických zahradách po celém světě je asi jen 60&nbsp;jedinců. Naše zoologická zahrada se může pochlubit samcem Daanem, který se narodil 19.&nbsp;9. 2011 v&nbsp;Nizozemsku a k&nbsp;nám dorazil 25.&nbsp;2. 2013 z&nbsp;Arnhemu. Samice Nayana se narodila 24.&nbsp;6. 2011 v&nbsp;Bratislavě, odkud do naší zoo dorazila 20.&nbsp;2. 2013. Společně vychovali dvě mláďata, samici Aruni a samce Ashangu, kteří se narodili v&nbsp;listopadu&nbsp;2017.
         </AnimalText>
       </AnimalTemplate>
     );
