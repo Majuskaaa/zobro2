@@ -26,7 +26,7 @@ export default class AnimalDetail extends React.Component {
           Ahoj mláďátka,
         </AnimalText>
         <AnimalText>
-          my jsme mary stepní, možná znáte naše příbuzné morčata, nebo dokonce kapybaru, největšího hlodavce vůbec. Tak velké my sice nejsme, ale šlapeme jí na paty. Na délku míváme asi sedmdesát centimetrů. Přestože jeden z&nbsp;nás sem přišel z&nbsp;německých Drážďan a dvě holky z&nbsp;Belgie, rozumíme si moc dobře.
+          my jsme mary stepní, možná znáte naše příbuzné morčata, nebo dokonce kapybaru, největšího hlodavce vůbec. Tak velké my sice nejsme, ale šlapeme jí na paty. Na délku míváme asi sedmdesát centimetrů.
         </AnimalText>
       <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
         <AnimalText>

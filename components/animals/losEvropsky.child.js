@@ -23,7 +23,7 @@ export default class AnimalDetail extends React.Component {
     return (
       <AnimalTemplate firstIndex={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
         <AnimalText>
-          Hohó! Kohopak to tu máme? Že ty jsi člověk z&nbsp;řádu primátů? Já jsem z&nbsp;řádu sudokopytníků, rodu losů a jmenuji se Fifi. Se mnou tu bydlí ještě několik kamarádů. Sousedíme se soby polárními, oproti kterým jsme větší a urostlejší. Ten největší z&nbsp;nás, co má parohy, je samec. Pokud ho nevidíš, může to být tím, že zrovna své parohy shodil. Každý rok je shazuje a poté čeká, až mu dorostou nové. Ani netušíš, jak se na nové parohy vždy těší! Asi tak, jako ty se těšíš o&nbsp;Vánocích na dárky.
+          Hohó! Kohopak to tu máme? Že ty jsi člověk z&nbsp;řádu primátů? Já jsem z&nbsp;řádu sudokopytníků, rodu losů a jmenuji se Fifi. Se mnou tu bydlí ještě několik kamarádů. Sousedíme se soby polárními, oproti kterým jsme větší a urostlejší. Ten největší z&nbsp;nás, který má parohy, je samec. Pokud ho nevidíš, může to být tím, že zrovna své parohy shodil. Každý rok je shazuje a poté čeká, až mu dorostou nové. Ani netušíš, jak se na nové parohy vždy těší! Asi tak, jako ty se těšíš o&nbsp;Vánocích na dárky.
         </AnimalText>
         <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
         <AnimalText>

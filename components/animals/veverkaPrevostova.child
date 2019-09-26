@@ -1,0 +1,47 @@
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+
+import styles from '../../styles/styles';
+import InPageImage from '../inPageImage';
+import AnimalText from '../animalText';
+import AnimalTemplate from '../animalTemplate';
+
+const IMAGES = [
+  require('../../images/animals/veverkaPrevostova/01.jpg'),
+  require('../../images/animals/veverkaPrevostova/02.jpg'),
+];
+
+const THUMBNAILS = [
+  require('../../images/animals/veverkaPrevostova/01-thumb.jpg'),
+  require('../../images/animals/veverkaPrevostova/02-thumb.jpg'),
+];
+
+var AnimalDetail = React.createClass({
+  render() {
+    return (
+      <AnimalTemplate firstIndex={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
+        <AnimalText>
+          Málokterá zvířata jsou tak oblíbená jako my veverky. Aby ne, když jsme tak roztomilé, a konkrétně my veverky Prévostovy navíc dokážeme lézt po stromech a skákat líp než Tygr z&nbsp;Medvídka Pú! Ale to rozhodně není to jediné, co byste o&nbsp;nás měli vědět.
+        </AnimalText>
+        <AnimalText>
+          Jsme z&nbsp;asijských deštných pralesů, ale dokážeme si poradit ve všech lesích. Celé dny lezeme po stromech a na zem slezeme jen občas, když si hledáme něco k&nbsp;jídlu. Jíme semena a oříšky, občas si pošmákneme i&nbsp;na hmyzu, ale nejradši máme různé plody. A jsme užitečné! Má se to takhle: když nějaký plod sebereme, odneseme si ho někam daleko od místa, kde jsme ho našly. A když jej sníme, necháme jeho semínka, ze kterých pak může vyrůst nový strom, i&nbsp;tam, kde předtím žádný takový nebyl. Takže si vlastně tak trochu pěstujeme vlastní jídlo.
+        </AnimalText>
+        <AnimalText>
+          Většinu dne poskakujeme osamoceně z&nbsp;větve na větev a do skupin o&nbsp;více veverkách se scházíme většinou buď když svítá, nebo když se pomalu šeří. A&nbsp;v&nbsp;takových skupinách často vyrážíme, abychom našly něco, co můžeme sníst. 
+        </AnimalText>
+        <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Zajímá vás, jak si spolu povídáme? Buď na sebe kvíkáme, nebo na sebe máváme ocásky. Naštěstí skvěle vidíme, takže zahlédneme i&nbsp;to, jak na sebe máváme, i&nbsp;když nejsme zrovna vedle sebe. 
+        </AnimalText>
+        <AnimalText>
+          No, teď už o&nbsp;nás nevíte jenom jednu věc, totiž kde bydlíme. Stavíme si hnízda na stromech. Buďto z&nbsp;větviček a listí, nebo v dutinách. Ale nemyslete si, že je to jen tak obyčejné hnízdo! Je to místo, kam se můžeme schovat, když nás někdo pronásleduje.
+        </AnimalText>
+        <AnimalText>
+          Dobře, na závěr vám prozradíme ještě jednu věc. Jsme nejbarevnější veverky, hezky černohnědobílé, a i&nbsp;proto se nám dřív říkalo veverky nádherné. Jsme prostě krasavice!
+        </AnimalText>
+      </AnimalTemplate>
+    );
+  }
+});
+
+module.exports = AnimalDetail;

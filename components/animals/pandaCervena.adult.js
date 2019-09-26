@@ -40,7 +40,7 @@ export default class AnimalDetail extends React.Component {
           Pandy červené jsou samotáři, setkávají se jen v&nbsp;období páření. Své úmysly si sdělí snadno – prostě na sebe zapískají. Samice jsou březí čtyři měsíce, a poté rodí jedno až čtyři mláďata, o&nbsp;která se celý následující rok starají. Dožívají se až 14&nbsp;let. Bohužel vysoká úmrtnost mláďat a další faktory, jako je například kácení lesů a lov, vedou k&nbsp;tomu, že se pandy červené řadí mezi ohrožené. Za poslední dvě desetiletí klesla jejich populace o&nbsp;50&nbsp;% a tento trend se i&nbsp;nadále zhoršuje.
         </AnimalText>
         <AnimalText>
-          V&nbsp;naší zoo chováme dvě pandy červené. Pandora se narodila v&nbsp;srpnu roku 2012 v&nbsp;norském Kristiansandu (stejně jako náš rosomák Ivan) a do Brna přijela v&nbsp;říjnu 2013. Huan pochází z&nbsp;rakouské Zoo Linz, narodil se v&nbsp;červnu 2013 a v&nbsp;Brně je od poloviny roku 2014.
+          V&nbsp;naší zoo aktuálně chováme dvě pandy červené. Sameček Huan pochází z&nbsp;rakouské Zoo Linz, narodil se v&nbsp;červnu&nbsp;2013 a v&nbsp;Brně je od poloviny roku&nbsp;2014. Samička Oshin se narodila taktéž v&nbsp;červnu&nbsp;2013, a to v&nbsp;Belgii, a k&nbsp;nám přicestovala v&nbsp;září&nbsp;2019 z&nbsp;Polska.
         </AnimalText>
       </AnimalTemplate>
     );

@@ -37,7 +37,7 @@ export default class AnimalDetail extends React.Component {
           </AnimalText>
         <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
           <AnimalText>
-            Přes den se schovávám a aktivní jsem především v&nbsp;podvečer a v&nbsp;noci. Na zimu se dobře vykrmím, pospím si nepravým zimním spánkem a do jara většinu ze zásob strávím. My mývalové jsme ve volné přírodě samotáři – až na matky s&nbsp;mláďaty. Já jsem se do Brna přistěhoval v&nbsp;roce 2015 s&nbsp;kamarádem a sličnou slečnou, a ačkoliv nemám ve výběhu soukromí, takto mi to taky vyhovuje. Ale dost bylo řečí, nemůžu vám na sebe odkrýt všechno!
+            Přes den se schovávám a aktivní jsem především v&nbsp;podvečer a v&nbsp;noci. Na zimu se dobře vykrmím, pospím si nepravým zimním spánkem a do jara většinu ze zásob strávím. My mývalové jsme ve volné přírodě samotáři – až na matky s&nbsp;mláďaty. Ale dost bylo řečí, nemůžu vám na sebe odkrýt všechno!
           </AnimalText>
       </AnimalTemplate>
     );

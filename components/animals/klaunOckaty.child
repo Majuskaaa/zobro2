@@ -1,0 +1,47 @@
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+
+import styles from '../../styles/styles';
+import InPageImage from '../inPageImage';
+import AnimalText from '../animalText';
+import AnimalTemplate from '../animalTemplate';
+
+const IMAGES = [
+  require('../../images/animals/klaunOckaty/01.jpg'),
+  require('../../images/animals/klaunOckaty/02.jpg'),
+  require('../../images/animals/klaunOckaty/03.jpg'),
+  require('../../images/animals/klaunOckaty/04.jpg'),
+];
+
+const THUMBNAILS = [
+  require('../../images/animals/klaunOckaty/01-thumb.jpg'),
+  require('../../images/animals/klaunOckaty/02-thumb.jpg'),
+  require('../../images/animals/klaunOckaty/03-thumb.jpg'),
+  require('../../images/animals/klaunOckaty/04-thumb.jpg'),
+];
+
+var AnimalDetail = React.createClass({
+  render() {
+    return (
+      <AnimalTemplate firstIndex={[2]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
+        <AnimalText>
+          Ahoj kamaráde! Já jsem klaun očkatý. Proč mi říkají, že jsem klaun? Nevím, vždyť tak nevypadám. Naopak! Jsem velký krasavec. Mé výrazné barvy musí každého uchvátit. Jsem celý jasně oranžový, a navíc na sobě mám ještě tři tlusté bílé pruhy, které jsou černě orámované. Slavný jsem hlavně díky své roli v pohádce Hledá se Nemo, ačkoliv tam jsem se vlastně jako klaun trochu choval.
+        </AnimalText>
+        <InPageImage indexes={[3]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Když se zrovna nepředvádím u&nbsp;nás v&nbsp;zoo nebo v&nbsp;pohádce, prozkoumávám mělké korálové útesy nebo laguny Tichého a Indického oceánu, což jsou obrovské vodní plochy.
+        </AnimalText>
+        <InPageImage indexes={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Nejraději žiji v&nbsp;sasankách, které mě chrání před nepřáteli. Jsem totiž jediná ryba, kterou chapadla sasanek nežahají. Moje pokožka má na povrchu sliz, který sasanky oklame, takže si myslí, že se dotýkají samy sebe. Nemám rád samotu. A kdo ano, že? Proto si kolem sebe držím vždy plno přátel. Zajímavé je, že naší skupině velí dámy.
+        </AnimalText>
+        <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Sasanky se mi starají i&nbsp;o&nbsp;potravu. Jím jejich parazity a úlomky z&nbsp;chapadel. Díky nim můžu být dlouhý třeba jako propiska.
+        </AnimalText>
+      </AnimalTemplate>
+    );
+  }
+});
+
+module.exports = AnimalDetail;
