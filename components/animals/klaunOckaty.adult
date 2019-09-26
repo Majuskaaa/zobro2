@@ -1,0 +1,50 @@
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+
+import styles from '../../styles/styles';
+import InPageImage from '../inPageImage';
+import AnimalText from '../animalText';
+import AnimalTemplate from '../animalTemplate';
+
+const IMAGES = [
+  require('../../images/animals/klaunOckaty/01.jpg'),
+  require('../../images/animals/klaunOckaty/02.jpg'),
+  require('../../images/animals/klaunOckaty/03.jpg'),
+  require('../../images/animals/klaunOckaty/04.jpg'),
+];
+
+const THUMBNAILS = [
+  require('../../images/animals/klaunOckaty/01-thumb.jpg'),
+  require('../../images/animals/klaunOckaty/02-thumb.jpg'),
+  require('../../images/animals/klaunOckaty/03-thumb.jpg'),
+  require('../../images/animals/klaunOckaty/04-thumb.jpg'),
+];
+
+var AnimalDetail = React.createClass({
+  render() {
+    return (
+      <AnimalTemplate firstIndex={[3]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
+        <AnimalText>
+          Klauna očkatého nazýváme vědeckým názvem <Text style={styles.italic}>Amphiprion ocellaris</Text>. Všichni ho jistě znáte jako zvídavého Nema z&nbsp;animované pohádky studia Walta Disneyho Hledá se Nemo.
+        </AnimalText>
+        <InPageImage indexes={[2]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Bez ohledu na slavnou pohádku, klaun je sám o&nbsp;sobě lehce zapamatovatelný. I&nbsp;přesto, že se jedná o&nbsp;jednu z&nbsp;malých rybek, jež dosahuje maximálně 11&nbsp;cm, jeho jasně oranžové tělo, které doplňují tři tlusté bílé pruhy, každého upoutá. Všechny pruhy konturují tenké černé linky, jež se objevují i&nbsp;na koncích všech jeho ploutví. Jejich základní barva se však může měnit s&nbsp;místem výskytu od červené až k&nbsp;téměř černé.
+        </AnimalText>
+        <InPageImage indexes={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Klauni žijí ve vodách od východního Indického oceánu přes indonéské a filipínské vody až k&nbsp;západnímu Pacifiku. Obvykle obývají mělké korálové útesy nebo laguny, kde žijí mezi jedovatými chapadly sasanky. Jsou jedinými rybami, které se o&nbsp;jejich chapadla nepožahají. Vyměšují totiž na povrchu své pokožky sliz, který sasanky oklame, a ony si pak myslí, že se dotýkají samy sebe. Jsou tak pro klauny i&nbsp;velice dobrým ochráncem před nepřáteli. 
+        </AnimalText>
+        <AnimalText>
+          Navzájem jsou si prospěšní. Klauni se živí parazity a úlomky chapadel sasanky, která je na oplátku chrání před predátory. Navíc rybky svými ploutvemi napomáhají lepší cirkulaci vody v&nbsp;hostitelské sasance.
+        </AnimalText>
+        <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Klauni žijí ve skupinkách, které hlídají své hostitelské sasanky před jinými klauny. Jejich silné hierarchii vládne samice. Zajímavé je, že se všichni rodí jako samci a až později se z&nbsp;některých stávají samičky. Mladí klauni plavou první dva týdny na otevřeném moři, než naleznou správnou hostitelskou sasanku, kde pak žijí i&nbsp;12&nbsp;let.
+        </AnimalText>
+      </AnimalTemplate>
+    );
+  }
+});
+
+module.exports = AnimalDetail;

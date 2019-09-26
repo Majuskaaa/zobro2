@@ -1,0 +1,41 @@
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+
+import styles from '../../styles/styles';
+import InPageImage from '../inPageImage';
+import AnimalText from '../animalText';
+import AnimalTemplate from '../animalTemplate';
+
+const IMAGES = [
+  require('../../images/animals/veverkaPrevostova/01.jpg'),
+  require('../../images/animals/veverkaPrevostova/02.jpg'),
+];
+
+const THUMBNAILS = [
+  require('../../images/animals/veverkaPrevostova/01-thumb.jpg'),
+  require('../../images/animals/veverkaPrevostova/02-thumb.jpg'),
+];
+
+var AnimalDetail = React.createClass({
+  render() {
+    return (
+      <AnimalTemplate firstIndex={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
+        <AnimalText>
+          Veverky Prévostovy, latinsky <Text style={styles.italic}>Callosciurus prevostii</Text>, jsou tříbarevné veverky obývající tropické deštné pralesy jihovýchodní Asie. Vyznačují se zejména tím, že jejich rodové jméno, <Text style={styles.italic}>Callosciurus</Text>, doslova znamená krásná veverka. Skládá se z&nbsp;latinského <Text style={styles.italic}>sciurus</Text>, což znamená veverka, a předpony <Text style={styles.italic}>calló-</Text>, která znamená krásný.
+        </AnimalText>
+        <AnimalText>
+          Jsou to denní živočichové, kteří jsou nejaktivnější za svítání a za soumraku, kdy se sdružují za účelem lovu potravy. Vzhledem k&nbsp;tomu, že se živí plody, semeny, ořechy, hmyzem a vajíčky, neocení jejich přítomnost především vlastníci plantáží s&nbsp;kokosy a palmami olejnými, na což veverky přirozeně doplácí. 
+        </AnimalText>
+        <AnimalText>
+          Zajímavostí je, jakým způsobem rozšiřují semena plodů. Když nějaké plody seberou, odnesou je daleko od místa nálezu. Potom, co je pozřou, tam semena nechají, čímž dané plodiny rozšíří. Jsou takto důležitou součástí ekosystému tropického lesa.
+        </AnimalText>
+        <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Veverky Prévostovy tráví celé dny na větvích. Žijí totiž na stromech a na zem přijdou jen při shánění potravy. Hnízda si hledají v dutinách stromů nebo si je staví z&nbsp;větviček a listí. Jakkoliv by takové sídlo nebudilo mnoho důvěry jako lidské obydlí, jako ochrana před predátory, orly a kunami veverkám stačí, stejně jako k výchově mláďat, která se rodí zcela bezmocná. Prvních šest týdnů života jim rodiče nosí do doupěte semena. Poté už jsou mláďata osrstěna a mohou z pelechu vyrazit do širého světa. Mimochodem, malá veverčata se rodí v&nbsp;libovolnou roční dobu, ale nejvíc jich bývá od června do srpna.
+        </AnimalText>
+      </AnimalTemplate>
+    );
+  }
+});
+
+module.exports = AnimalDetail;

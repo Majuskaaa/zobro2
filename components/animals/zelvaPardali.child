@@ -1,0 +1,50 @@
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+
+import styles from '../../styles/styles';
+import InPageImage from '../inPageImage';
+import AnimalText from '../animalText';
+import AnimalTemplate from '../animalTemplate';
+
+const IMAGES = [
+  require('../../images/animals/zelvaPardali/01.jpg'),
+  require('../../images/animals/zelvaPardali/02.jpg'),
+  require('../../images/animals/zelvaPardali/03.jpg'),
+  require('../../images/animals/zelvaPardali/04.jpg'),
+];
+
+const THUMBNAILS = [
+  require('../../images/animals/zelvaPardali/01-thumb.jpg'),
+  require('../../images/animals/zelvaPardali/02-thumb.jpg'),
+  require('../../images/animals/zelvaPardali/03-thumb.jpg'),
+  require('../../images/animals/zelvaPardali/04-thumb.jpg'),
+];
+
+var AnimalDetail = React.createClass({
+  render() {
+    return (
+      <AnimalTemplate firstIndex={[2]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
+        <AnimalText>
+          Ahoj děti,
+        </AnimalText>
+        <AnimalText>
+          jsme želvy pardálí. Pocházíme z&nbsp;velmi teplých oblastí kontinentu, který se jmenuje Afrika. Určitě vás proto překvapí, že je možné nás najít i&nbsp;hodně vysoko v&nbsp;horách. Klidně i&nbsp;výš, než je Sněžka, nejvyšší hora České republiky. A tady už moc teplo není, obzvláště v&nbsp;noci! Nejradši máme déšť. Když pak přijde období sucha, upadáme do letního spánku, podobně jako to dělá medvěd přes zimu. Schováváme se v&nbsp;různých dírách, škvírách a někdy i&nbsp;v&nbsp;termitištích.
+        </AnimalText>
+        <InPageImage indexes={[1]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Nejsme zrovna velké cestovatelky. Když už někam vyrazíme, hledáme především vodu, ale od svého domova se příliš nevzdalujeme. Jíme hlavně rostliny, ale smlsneme si třeba i&nbsp;na sladkém ovoci, pokud nějaké objevíme. A když je nejhůř, sníme také živočišné zbytky a výkaly. To by vám asi nechutnalo, co?
+        </AnimalText>
+        <InPageImage indexes={[3]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          A víte, jak přichází na svět naše mláďátka? To maminka želva naklade vajíčka do díry, kterou vyhloubí někde na bezpečném místě. Před tím, než začne klást vajíčka, hodně pije, aby pak mohla do jamky načůrat – zajistí tak, aby v&nbsp;jámě bylo vlhko. Díra je mistrné dílo, vypadá jako obrácená houba, takže dole je širší než nahoře. Pak vajíčka zahrabe a nechá je tam. Želvičky se líhnou až za několik měsíců. Jsou šišaté, to aby se do skořápky vešly, postupně se jim ale krunýř roztáhne do obvyklé podoby.
+        </AnimalText>
+        <InPageImage indexes={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
+        <AnimalText>
+          Dospělého samce od samičky snadno rozeznáte, bývá totiž na rozdíl od samičky užší a protáhlejší. Želvy pardálí mohou vážit až 25&nbsp;kilogramů a dožívají se požehnaného věku až 100&nbsp;let.
+        </AnimalText>
+      </AnimalTemplate>
+    );
+  }
+});
+
+module.exports = AnimalDetail;
