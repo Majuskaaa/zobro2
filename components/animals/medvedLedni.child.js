@@ -26,7 +26,6 @@ export default class AnimalDetail extends React.Component {
           Milé děti,
         </AnimalText>
         <AnimalText>
-        <AnimalText>
           jmenuji se Noria a jsem zatím posledním ledním medvídětem narozeným v&nbsp;této zoo. Mými rodiči jsou Cora a Umca, dost možná už jste o&nbsp;nich slyšeli. Narodila jsem se v&nbsp;listopadu&nbsp;2015. Oběma mým rodičům bylo v&nbsp;té době sedmnáct let.
         </AnimalText>
         <AnimalText>
@@ -42,8 +41,6 @@ export default class AnimalDetail extends React.Component {
       <InPageImage indexes={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator} />
         <AnimalText>
           Když jsem vyrostla, bylo načase, abych se podívala do světa. V&nbsp;srpnu&nbsp;2018 jsem tedy odjela do zoo v&nbsp;německém Rostocku, kde momentálně bydlím se svým kamarádem Sizzelem. V&nbsp;Brně však můžete potkat moji maminku Coru. A&nbsp;nemusíte mít ani velké štěstí, abyste se přesvědčili, po kom mám tu svoji zálibu v&nbsp;cachtání se ve vodě :–).
-        </AnimalText>
-        <AnimalText>
         </AnimalText>
         <AnimalText>
           S&nbsp;láskou

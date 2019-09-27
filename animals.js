@@ -16,8 +16,6 @@ import kulikPisecnyAdult from './components/animals/kulikPisecny.adult';
 import kulikPisecnyChild from './components/animals/kulikPisecny.child';
 import ustricnikVelkyAdult from './components/animals/ustricnikVelky.adult';
 import ustricnikVelkyChild from './components/animals/ustricnikVelky.child';
-import liskaPolarniAdult from './components/animals/liskaPolarni.adult';
-import liskaPolarniChild from './components/animals/liskaPolarni.child';
 import manulAdult from './components/animals/manul.adult';
 import manulChild from './components/animals/manul.child';
 import lachtanMedvediAdult from './components/animals/lachtanMedvedi.adult';
