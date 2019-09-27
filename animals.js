@@ -121,11 +121,11 @@ export default animalDb = {
     ]
   },
 
-//  'liskaPolarni' : {
-//    name: 'Liška polární',
-//    contentAdult: require('./components/animals/liskaPolarni.adult'),
-//    contentChild: require('./components/animals/liskaPolarni.child'),
-//    animal: 'liskaPolarni',
+  'liskaPolarni' : {
+    name: 'Liška polární',
+    contentAdult: require('./components/animals/liskaPolarni.adult'),
+    contentChild: require('./components/animals/liskaPolarni.child'),
+    animal: 'liskaPolarni',
 //    neighbours: [
 //      'tygrSumatersky',
 //    ]
@@ -974,6 +974,36 @@ export default animalDb = {
 //      {animal: 'agutiAzaruv', direction: 'back'},
     ]
   },
+  
+  'klaunOckaty' : {
+    name: 'Klaun očkatý',
+    contentAdult: require('./components/animals/klaunOckaty.adult'),
+    contentChild: require('./components/animals/klaunOckaty.child'),
+    animal: 'klaunOckaty',
+    neighbours: [
+      {animal: 'klaunOckaty', direction: 'front'},
+    ]
+  },
+  
+  'veverkaPrevostova' : {
+    name: 'Veverka Prévostova',
+    contentAdult: require('./components/animals/veverkaPrevostova.adult'),
+    contentChild: require('./components/animals/veverkaPrevostova.child'),
+    animal: 'veverkaPrevostova',
+    neighbours: [
+      {animal: 'veverkaPrevostova', direction: 'front'},
+    ]
+  },
+    
+  'zelvaPardali' : {
+    name: 'Želva pardálí',
+    contentAdult: require('./components/animals/zelvaPardali.adult'),
+    contentChild: require('./components/animals/zelvaPardali.child'),
+    animal: 'zelvaPardali',
+    neighbours: [
+      {animal: 'zelvaPardali', direction: 'front'},
+    ]
+  },  
 
 
 /*
